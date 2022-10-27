@@ -1,0 +1,7 @@
+node_modules
+vue.config.js
+dist
+.idea
+.cache
+.temp
+package-lock.json
