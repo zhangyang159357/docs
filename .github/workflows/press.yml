@@ -26,6 +26,7 @@ jobs:
           node-version: 18
           cache: npm
           working-directory: ./press/
+          cache-dependency-path: './press/package-lock.json'
 
       - name: 安装依赖
         run: npm install
