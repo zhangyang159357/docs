@@ -14,13 +14,17 @@ jobs:
         working-directory: ./press/
     steps:
       - name: Checkout  
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
 
       - name: 构建文档   
         run: |
           npm install
           npm run docs:build
-          > src/.vuepress/dist/.nojekyll
+          > press/src/.vuepress/dist/.nojekyll
         env:
           NODE_OPTIONS: '--max_old_space_size=8192'
 
