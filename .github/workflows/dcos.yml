@@ -8,10 +8,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: ./docs/
     steps:
       - name: Checkout  
         uses: actions/checkout@v2.3.1
@@ -20,7 +16,7 @@ jobs:
         run: |
           npm install
           npm run docs:build
-          > src/.vuepress/dist/.nojekyll
+          > docs/src/.vuepress/dist/.nojekyll
         env:
           NODE_OPTIONS: '--max_old_space_size=8192'
 
@@ -28,5 +24,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
           BRANCH: gh-pages
-          FOLDER: ./docs/src/.vuepress/dist
+          FOLDER: docs/src/.vuepress/dist
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
