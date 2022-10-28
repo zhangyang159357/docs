@@ -25,6 +25,7 @@ jobs:
           
       - name: 缓存 node_modules
         uses: actions/cache@v2
+        id: npm-cache
         with:
           path: |
             **/node_modules
@@ -34,13 +35,16 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
             
+      - name: 安装依赖  
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm install
+          
       - name: 构建文档   
         run: |
-          npm install
           npm run docs:build
           > src/.vuepress/dist/.nojekyll
         env:
-          NODE_OPTIONS: '--max_old_space_size=8192'
+          NODE_OPTIONS: '--max_old_space_size=8192'          
 
 #       - name: 部署文档  
 #         uses: JamesIves/github-pages-deploy-action@v4
