@@ -42,7 +42,7 @@ jobs:
       - name: 构建文档   
         run: |
           npm run docs:build
-          > src/.vuepress/dist/.nojekyll
+#          > src/.vuepress/dist/.nojekyll
         env:
           NODE_OPTIONS: '--max_old_space_size=8192'          
 
