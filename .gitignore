@@ -1,7 +1,5 @@
-node_modules
-vue.config.js
-dist
-.idea
-.cache
-.temp
-package-lock.json
+
+node_modules/
+docs/src/.vuepress/.cache/
+docs/src/.vuepress/.temp/
+docs/src/.vuepress/dist/

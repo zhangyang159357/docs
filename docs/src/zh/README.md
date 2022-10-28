@@ -1,17 +1,17 @@
 ---
 home: true
 icon: home
-title: 我的学习笔记
+title: 项目主页
 heroImage: /logo.svg
-heroText: 我的学习笔记
-tagline: 本网站仅用于个人资料的整理以及学习~~
+heroText: 项目名称
+tagline: 你可以在这里放置或是整个项目的描述。
 actions:
   - text: 使用指南 💡
-    link: /demo/
+    link: /zh/demo/
     type: primary
 
   - text: 文档
-    link: /guide/
+    link: /zh/guide/
 
 features:
   - title: Markdown 增强
