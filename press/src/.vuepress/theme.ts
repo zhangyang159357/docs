@@ -43,11 +43,11 @@ export default hopeTheme({
   },
 
   encrypt: {
-    global: true,
-    admin: ["1234"],
-    // config: {
-    //   "/demo/encrypt.html": ["1234"],
-    // },
+    // global: true,
+    // admin: ["1234"],
+    config: {
+      "/demo/encrypt.html": ["1234"],
+    },
   },
 
   plugins: {
