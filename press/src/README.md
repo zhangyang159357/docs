@@ -1,12 +1,12 @@
 ---
 home: true
 icon: home
-title: 我的学习笔记
+title: 学习笔记
 heroImage: /logo.svg
-heroText: 我的学习笔记
-tagline: 本网站仅用于个人资料的整理以及学习~~
+heroText: 学习笔记
+tagline: 仅用于个人资料文档整理及学习~~
 actions:
-  - text: 使用指南 💡
+  - text: 开始学习 💡
     link: /demo/
     type: primary
 
@@ -14,27 +14,27 @@ actions:
     link: /guide/
 
 features:
-  - title: Markdown 增强
+  - title: Java
     icon: markdown
-    details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/
+    details: Java相关面试题，包括基础、集合、IO、并发编程、JVM等
+    link: /interview/java
 
-  - title: 幻灯片页面
+  - title: Mysql
     icon: slides
-    details: 添加幻灯片页面以显示你喜欢的内容
+    details: XXXXX
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/layout/slides.html
 
-  - title: 布局增强
+  - title: Redis
     icon: layout
     details: 添加路径导航、页脚、改进的导航栏、改进的页面导航等。
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/layout/
 
-  - title: 浏览量与评论
+  - title: 职业规划
     icon: comment
     details: 配合 Waline 来开启阅读量统计与评论支持
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/comment.html
 
-  - title: 文章信息
+  - title: 随笔
     icon: info
     details: 为你的文章添加作者、写作日期、预计阅读时间、字数统计等信息
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/page-info.html
